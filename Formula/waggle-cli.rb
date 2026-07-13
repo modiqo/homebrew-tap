@@ -1,25 +1,25 @@
 class WaggleCli < Formula
   desc "The waggle CLI: the clap projection of the operations catalog. Ships `waggle` (verbs) and, from CP-6, `waggled` (the local daemon) and the stdio shim."
   homepage "https://github.com/modiqo/waggle"
-  version "0.5.1"
+  version "0.5.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/modiqo/waggle/releases/download/v0.5.1/waggle-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "b4f8e747e997003720aebfafd1cca991fc80f637ced3c3fbe29f3e4d484bbdb9"
+      url "https://github.com/modiqo/waggle/releases/download/v0.5.2/waggle-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "c563e0a559762839c20b54457f61ac8726b9332054caac663b1ea1bed10c54b6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/modiqo/waggle/releases/download/v0.5.1/waggle-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "3ac6ed00d3de3c6652616333e7fcbeae35dd65e065e56c079aad85fbf4524e63"
+      url "https://github.com/modiqo/waggle/releases/download/v0.5.2/waggle-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "48c7a87d41164eccb7b9b3068655dd7225dc1714686630a64d2750b3baeb8ea4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/modiqo/waggle/releases/download/v0.5.1/waggle-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8f1082bb83a5ac034b37ab7ef3409c58c732a75e42d3ad259ae9da0e3771050e"
+      url "https://github.com/modiqo/waggle/releases/download/v0.5.2/waggle-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d68cb61a6fc207c8619dec28c7137b48d18aed745e17630f9d121fd6b674860e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/modiqo/waggle/releases/download/v0.5.1/waggle-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ce707400fe08b09ed4ca1b32ecafeba403f110b3d97946aacc9c7e35a0da247b"
+      url "https://github.com/modiqo/waggle/releases/download/v0.5.2/waggle-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "81ba5a054d81badc39d0742e4713d80414ec46e09de6ab160303d40aefe19f62"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
