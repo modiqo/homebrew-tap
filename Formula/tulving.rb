@@ -6,7 +6,7 @@
 class Tulving < Formula
   desc "Tiny cron with a memory: schedule commands, keep results, recall"
   homepage "https://github.com/modiqo/tulving"
-  version "0.1.1"
+  version "0.1.2"
   license any_of: ["MIT", "Apache-2.0"]
 
   BASE = "https://github.com/modiqo/tulving/releases/download/v#{version}"
@@ -14,20 +14,20 @@ class Tulving < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "#{BASE}/tulving-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "e1a2284e0c4ac1f568f68fcf1b070f79ef7ad74fb5d89530ac8b0e9797e671b8"
+      sha256 "99bc72d391e9e676dc930b4342bcaea2fa83708872bef185d782833480f27da3"
     else
       url "#{BASE}/tulving-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "bebfe4ced9b66463396c64473242b4fe0ef75cf8f40cb2ccb881d7b5058a34ad"
+      sha256 "a9bfc2228726447578800ae549a93a8129a7679739f66b24cf9ba197cbc43d5b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "#{BASE}/tulving-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "09827f22555afb078258a52d7b9d281ef9800161a9e4042c69d4c5ff9a288ea8"
+      sha256 "be4d115a342f34cd036e900dbc1c5da1808398ca72dc7b0108261b21ec2403ce"
     else
       url "#{BASE}/tulving-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f4e36d4fc0e3f9a2875ba687bead1b2ab6314cef99f390e848c5b3c82c6d0bf4"
+      sha256 "a7a556a2194c1d01777a991c4f4e81ae1d4e6a7309babf4a2543ef2d235f732e"
     end
   end
 
